@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download File</title>
+    <script>
+        function downloadFile() {
+            var fileName = document.getElementById("fileName").value;
+            window.location.href = "DownloadServlet?file=" + fileName;
+        }
+    </script>
+</head>
+<body>
+    <h1>Download File</h1>
+    <form>
+        <input type="text" id="fileName" placeholder="Enter file name">
+        <button type="button" onclick="downloadFile()">Download</button>
+    </form>
+</body>
+</html>
